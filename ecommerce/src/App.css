@@ -1,0 +1,324 @@
+body{
+    width: 100%;
+    height: auto;
+    background-color: rgb(228, 234, 236);
+  
+}
+.bg{
+    background-image:  linear-gradient( 90.6deg, rgb(33, 2, 235) 0.2%, rgb(88, 78, 228));;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 735px;
+}
+.navcolor{
+   background-image:  linear-gradient( 90.6deg, rgb(250, 250, 250) 0.2%, rgb(251, 251, 253));;
+}
+.headimg{
+ transform-style: preserve-3d;
+ transition: all 6s ease;
+}
+
+.headimg:hover{
+   transform:rotate3d(0,1,0,180deg);
+}
+.btnbuy{
+   background-color: rgb(247, 42, 42);
+   border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+  border: none;
+}
+.btnbuy:hover{
+box-shadow: 0px 0px 50px rgb(247, 3, 3);
+opacity: 1;
+}
+.cir{
+ background:rgb(246, 94, 94);
+  
+ border-radius: 300px 300px 0px 300px;
+  margin-left: 200px;
+  box-shadow:  0px 0px 30px rgb(255, 0, 4);
+}
+
+.cir:hover{
+   box-shadow:  0px 0px 30px rgb(255, 0, 157);
+}
+i:hover{
+box-shadow:  0px 0px 30px rgb(255, 0, 221);
+background-color: rgb(232, 73, 73);
+}
+
+.back{
+    background-image: url('images/backg.jpg');
+    background-repeat:no-repeat ;
+    background-size: cover ;
+    width: 100%;
+    height: 100vh;
+}
+.lobg{
+    background-image: url('images/lobg.jpg');
+    background-repeat:no-repeat ;
+    background-size: cover ;
+    height:100vh; 
+}
+.pointer{
+   cursor: pointer;;
+}
+.login{
+    cursor: pointer;;
+ }  
+ .sig{
+    cursor: pointer;;
+ } 
+ .cart{
+    cursor: pointer;;
+ } 
+ .home{
+    cursor: pointer;
+    color: rgb(11, 11, 11);
+ } 
+ .home:hover{
+  color: rgb(220, 122, 95);
+  
+ }
+ .adres{
+    cursor: pointer; 
+ } 
+ .in{
+   cursor: pointer; 
+} 
+.se{
+   cursor: pointer; 
+   color: black;
+} 
+.se:hover{
+   color: rgb(220, 122, 95);
+}
+.de{
+   cursor: pointer; 
+} 
+ .change{
+    cursor: pointer;
+
+ }
+ .cat{
+   cursor: pointer;
+   color: black;
+ }
+ .cat:hover{
+   color: rgb(220, 122, 95);
+ }
+ .catitm{
+   cursor: pointer;
+   color: black;
+ }
+ .catitm:hover{
+   color: rgb(220, 122, 95);
+ }
+ .ord{
+   cursor: pointer;
+   color: black;
+ }
+ .ord:hover{
+   color: rgb(3, 171, 227);
+ }
+ .cart:hover{
+   color: rgb(3, 171, 227);
+ }
+ .change:hover{
+    background-color: rgb(194, 232, 194);
+ }
+ .mo{
+   background-color: rgb(228, 234, 236);
+ }
+ .price{
+   animation: anim 3s ease forwards;
+   display: none;
+   position:absolute;
+   transition: 3s;
+ }
+ .pr1{
+   background-color: rgb(251, 252, 252);
+   border-radius:50px 0px 50px 0px;
+  
+ }
+ .card:hover{
+  scale: 1.05;
+  transition: 1s ;
+ }
+ 
+ .pr1:hover{
+   scale: 1.1;
+   transition: 1s ease-in-out;
+   background: linear-gradient(to left, rgb(32, 25, 234) 50%, rgb(246, 248, 248) 50%) right;
+   background-size: 200%;
+   transition: .5s ease-out;
+   color: antiquewhite;
+  
+ }
+  @keyframes anim2{
+   0%{
+      background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+      background-color: rgb(188, 227, 227);
+   }
+   100%{
+      background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+      background-size: 200%;
+      transition: .5s ease-out;
+   }
+  }
+ @keyframes anim{
+   0%{
+      bottom:-500px;
+      opacity: 0;
+   } 
+   100%{
+      opacity: 1;
+      bottom:-230px;
+      left: 0px;
+   }
+ }
+
+ .slider{
+   
+   height:100vh;
+   width: 180px;
+   position: absolute;
+   background-color: rgb(36, 236, 236);
+   transition: 0.5s ease;
+   transform: translateX(-180px);
+ }
+
+ h1{
+   color: blue;
+   font-weight: 800;
+   text-align: right;
+   padding: 10px 0;
+   padding-right: 30px;
+
+ }
+ .input{
+  
+  position: relative;
+  
+ }
+ ul li{
+   list-style: none;
+ }
+ ul li a{
+   color: blueviolet;
+   font-weight: 500;
+   padding: 5px 0;
+   display: block;
+   text-transform: capitalize;
+   text-decoration: none;
+   transition:0.2s ease-out;
+ }
+
+ .toggle{
+   position: absolute;
+   height: 30px;
+   width: 30px;
+   z-index: 1;
+   cursor: pointer;
+   border-radius: 2px;
+   top: 12px;
+   margin-left: 2px;
+   left: 10px;
+   background-color: #f5f2f2;
+   box-shadow: 0 0 10px rgb(0,0,0,0.3);
+   display: none;
+ }
+
+
+ .toggle .common{
+   position: absolute;
+   height: 2px;
+   width: 20px;
+   background-color:rgb(14, 14, 14);
+   border-radius: 50px;
+   transition: 0.3s ease;
+ }
+
+ .toggle .top_line{
+   top:30%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+ }
+ .toggle .middle_line{
+   top:50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+ }
+
+ .toggle .bottom_line{
+   top:70%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+ }
+
+ .top_line{
+   left: 2px;
+   top:14px;
+   width: 25px;
+
+ }
+ 
+.middle_line{
+   left: 2px;
+   top:14px;
+   width: 25px;
+  
+ }
+
+ .bottom_line{
+   left: 2px;
+   top:14px;
+   width: 25px;
+   
+ }
+ input:checked ~ .slider{
+   transform: translate(0);
+ }
+ 
+.frm{
+  margin-left: 35%;
+}
+ @media screen and (max-width:800px){
+   div.cir2{
+      display: none;
+   }
+   div.price{
+    top: 700px;
+ 
+   }
+   input.search{
+    width: 100px;
+   }
+   div.cardd{
+     margin-top: 110px;
+   }
+   form.frm{
+    margin-left: 20%;
+   }
+  
+ }
+ @media screen and (max-width:580px) {
+  div.toggle{
+    display: block;
+  
+   }
+ a.name{
+  margin-left: 35px;
+ }
+ form.frm{
+  margin-left: 0%;
+ }
+ }
+   
+ 
+   
